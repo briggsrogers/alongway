@@ -1,0 +1,105 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>#LongWayProject</title>
+    <meta name="description" content="Adding miles of movement to America.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+</head>
+
+<body>
+    <div id="Wrapper">
+        <div class="Back Hidden"></div>
+        <div id="App">
+            <div class="MainView">
+                <div class="Intro"></div>
+                <div class="TheNumber"></div>
+                <div class="Outro"></div>
+
+                <div class="Actions">
+                    <a href="#Log" id="Log"> + Log your miles</a>
+                    <a href="#Share" class="Share" id="Share">Share this number.</a>
+                    <a href="#About" id="WhatIs">What is this number?</a>
+                </div>
+            </div>
+
+            <div class="SubmitView Hidden">
+                <input input type="text" class="Input" id="OriginInput" label="Origin" name="Origin" placeholder="Toyko" value="Toyko"></input>
+                <div id="OriginInputAfter">to</div>
+                <input input type="text" class="Input" id="DestinationInput" label="destination" name="destination" placeholder="New York" value="New York"></input>
+
+                <div class="Actions">
+                    <a href="#" id="Calculate"> Calculate distance</a>
+                </div>
+            </div>
+
+            <div class="JourneyView Hidden">
+                <div class="TheNumber">0000002</div>
+                <div class="Outro">miles</div>
+
+                <div class="Actions">
+                    <a href="#" id="Submit"> Submit. </a>
+                </div>
+
+            </div>
+
+            <div class="ShareView Hidden">
+                <p><strong> #LongWayProject </strong> </p><br />
+                <a href="https://twitter.com/intent/tweet?hashtags=LongWayProject&ref_src=twsrc%5Etfw&text=Say%20something%20about%20these%20miles...&tw_p=tweetbutton&url=http%3A%2F%2Fwww.alongway.us" target="_blank">Tweet</a>
+                <div class="" data-href="https://alongway.us" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Falongway.us%2F&amp;src=sdkpreparse">Share</a></div>
+
+            </div>
+
+        </div>
+        <div class="Message"></div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
+    </script>
+
+    <script src="js/main.js"></script>
+    <script src="js/distance.js"></script>
+    <script src="js/requests.js"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaw8DRKdhKyQfjrSX_7-xRX6SQriMLgbU" async defer></script>
+
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+        (function(b, o, i, l, e, r) {
+            b.GoogleAnalyticsObject = l;
+            b[l] || (b[l] =
+                function() {
+                    (b[l].q = b[l].q || []).push(arguments)
+                });
+            b[l].l = +new Date;
+            e = o.createElement(i);
+            r = o.getElementsByTagName(i)[0];
+            e.src = 'https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e, r)
+        }(window, document, 'script', 'ga'));
+        ga('create', 'UA-XXXXX-X', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.8&appId=763852187054187";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+</body>
+
+</html>
